@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>audrey chu</title>
 </head>
+
+<script src="https://kit.fontawesome.com/9f2ba2aaf9.js" crossorigin="anonymous"></script>
 <style>
-#main{
-    width: 70%;
-    border: 3px solid gray;
-    border-radius: 5px;
-    text-align: center;
-    margin: auto;
-}
-#cat{
-    width: 50%;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+        background-color: #e7ecef;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 90vh;
+    }
+
+    .me {
+        font-family: 'Pacifico', cursive;
+        font-size: 6em;
+        color: #274c77;
+        margin: 2.5rem 0;
+    }
+
+    .intro {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.15em;
+        /*background-color: #6096BA;*/
+        color: #6096BA;
+        margin: 2.5rem 0;
+        padding: 7px;
+        border-radius: 3px;
+    }
+
+    .contact {
+        font-size: 2em;
+    }
+
+    .contact a {
+        margin: 0 0.5rem;
+        color: #a3cef1;
+    }
+
+    .contact a:hover{
+        color: #274c77;
+    }
+
+    /* phones */
+    @media (max-width: 576px) {
+        .me {
+            font-size: 5em;
+            margin: 2rem 0;
+        }
+
+        .intro {
+            font-size: 1em;
+            margin: 2rem 0;
+        }
+        .contact {
+        font-size: 1.5em;
+    }
+
+    }
 </style>
+
 <body>
-    <div id="main">
-        <img id="cat" src="neko-atsume-post-1.jpg">
-        <br>meow
+    <div class="container">
+        <div class="me">
+            audrey chu
+        </div>
+        <div class="intro">
+            C# Developer @ AdvMeds
+        </div>
+        <hr />
+        <div class="contact">
+            <a title="click to copy my email address!" href="#"><i class="fas fa-envelope"></i></a>
+            <a title="resume not ready yet!" href="#"><i class="fas fa-file-alt"></i></a>
+            <a title="my LinkedIn profile!" href="https://www.linkedin.com/in/chia-hui-chu/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
     </div>
 </body>
+
 </html>
